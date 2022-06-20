@@ -1,10 +1,13 @@
-const app = require("./app.js");
+const app = require("./server");
 const request = require("supertest");
-beforeAll(async () => {
+beforeAll(  (done) => {
   console.log("EXTRA VIRGIN OLIVE OIL");
+  done()
 });
-afterAll(async () => {
+afterAll(  (done) => {
   console.log("OLIVE OIL");
+  app.close();
+  done()
 });
 let endPointGet = [
   { url: `/endpoint1` },

@@ -42,9 +42,4 @@ app.post("/endpoint4", (req, res) => {
 
 // JSON HARUS MENGGANDUNG PROPERY msg
 
-
-
-
-app.listen(4000, () => console.log("LISTENING ON 4000"));
-
 module.exports = app;
