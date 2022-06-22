@@ -6,6 +6,17 @@ app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+
+function doShit (duration) {
+  const start = Date.now()
+  while (Date.now() - start < duration) {}
+}
+
+app.get('/slow', (req, res) => {
+  doShit(5000)
+  res.send('Nom Nom')
+})
+
 app.get("/endpoint1", (req, res) => {
   res.status(200).json({ msg: "Halo Mas Ham :: Result EndPoint1" });
 });
