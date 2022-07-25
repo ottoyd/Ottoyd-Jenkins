@@ -69,19 +69,19 @@ app.put("/endpoint4", (req, res) => {
 
 
 app.delete("/endpoint1", (req, res) => {
-  if (!req.body.body) res.status(500).json({err: `WHERE IS THE H !?..`})
+  if (!req.body.body) res.status(500).json({err: `WHAT IS THE H !?..`})
   res.status(200).json(req.body);
 });
 app.delete("/endpoint2", (req, res) => {
-  if (!req.body.body) res.status(500).json({err: `WHERE IS THE H !?..`})
+  if (!req.body.body) res.status(500).json({err: `WHAT IS THE H !?..`})
   res.status(200).json(req.body);
 });
 app.delete("/endpoint3", (req, res) => {
-  if (!req.body.body) res.status(500).json({err: `WHERE IS THE H !?..`})
+  if (!req.body.body) res.status(500).json({err: `WHAT IS THE H !?..`})
   res.status(200).json(req.body);
 });
 app.delete("/endpoint4", (req, res) => {
-  if (!req.body.body) res.status(500).json({err: `WHERE IS THE H !?..`})
+  if (!req.body.body) res.status(500).json({err: `WHAT IS THE H !?..`})
   res.status(200).json(req.body);
 });
 // TASK AC-001
