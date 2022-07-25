@@ -47,6 +47,24 @@ app.post("/endpoint4", (req, res) => {
   res.status(200).json(req.body);
 });
 
+
+
+app.put("/endpoint1", (req, res) => {
+  if (!req.body.body) res.status(500).json({err: `WHERE IS THE H !?..`})
+  res.status(200).json(req.body);
+});
+app.put("/endpoint2", (req, res) => {
+  if (!req.body.body) res.status(500).json({err: `WHERE IS THE H !?..`})
+  res.status(200).json(req.body);
+});
+app.put("/endpoint3", (req, res) => {
+  if (!req.body.body) res.status(500).json({err: `WHERE IS THE H !?..`})
+  res.status(200).json(req.body);
+});
+app.put("/endpoint4", (req, res) => {
+  if (!req.body.body) res.status(500).json({err: `WHERE IS THE H !?..`})
+  res.status(200).json(req.body);
+});
 // TASK AC-001
 
 // BUAT API dengan ENDPOINT /jsonTesting YANG MENGEMBALIKAN JSON APAPUN
