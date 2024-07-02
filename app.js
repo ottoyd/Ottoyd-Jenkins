@@ -6,7 +6,7 @@ app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-console.log('flyyy my sted')
+console.log('fly my sted')
 
 function doShit (duration) {
   const start = Date.now()
