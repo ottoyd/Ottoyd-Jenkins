@@ -19,7 +19,7 @@ app.get('/slow', (req, res) => {
 })
 
 app.get("/endpoint1", (req, res) => {
-  res.status(200).json({ msgs: "Halo Mas Ham :: Result EndPoint1" });
+  res.status(200).json({ msg: "Halo Mas Ham :: Result EndPoint1" });
 });
 app.get("/endpoint2", (req, res) => {
   res.status(200).json({ msg: "Halo Mas Ham :: Result EndPoint2" });
