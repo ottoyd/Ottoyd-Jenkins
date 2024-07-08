@@ -8,4 +8,19 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            echo "im always"
+        }
+        success {
+            echo "im success"
+        }
+        failure {
+            echo "im failure"
+        }
+        cleanup {
+            echo "im cleanup like always"
+        }
+
+    }
 }
