@@ -2,25 +2,39 @@ pipeline {
     agent any
 
     stages {
-        stage('Stage 1') {
+        stage('Build') {
             steps {
-                echo 'Hello World'
+                // Install npm dependencies
+                sh 'npm install'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                // Run tests
+                sh 'npm run test'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Hello Deploy'
             }
         }
     }
+
     post {
         always {
-            echo "im always"
+            echo 'im always'
         }
         success {
-            echo "im success"
+            echo 'im success'
         }
         failure {
-            echo "im failure"
+            echo 'im failure'
         }
         cleanup {
-            echo "im cleanup like always"
+            echo 'im cleanup like always'
         }
-
     }
 }
